@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import ParticlesComponent from './ParticlesComponent'; // Adjust the path as necessary
 import { StaticQuery, graphql } from 'gatsby';
 import PropTypes from 'prop-types';
 import { Head, Loader, Nav, Social, Email, Footer } from '@components';
@@ -82,6 +83,7 @@ const Layout = ({ children, location }) => {
       `}
       render={({ site }) => (
         <div id="root">
+          <ParticlesComponent />
           <Head metadata={site.siteMetadata} />
 
           <GlobalStyle />

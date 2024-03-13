@@ -2,11 +2,6 @@
   "name": "v2",
   "description": "Personal Website V2",
   "version": "1.0.0",
-  "author": "Chandrika Deb <chandrikadeb7@gmail.com>",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/chandrikadeb7/chandrikadeb7.github.io"
-  },
   "keywords": [
     "gatsby"
   ],
@@ -60,15 +55,19 @@
     "react-dom": "^17.0.2",
     "react-helmet": "^6.1.0",
     "react-transition-group": "^4.3.0",
+    "react-tsparticles": "^2.12.2",
+    "react-typed": "^1.2.0",
     "scrollreveal": "^4.0.5",
     "smooth-scroll": "^16.1.0",
-    "styled-components": "^5.3.3"
+    "styled-components": "^5.3.3",
+    "tsparticles": "^3.3.0",
+    "tsparticles-preset-triangles": "^2.12.0"
   },
   "devDependencies": {
     "@upstatement/eslint-config": "1.0.1",
     "@upstatement/prettier-config": "^1.0.0",
     "babel-eslint": "^10.1.0",
-    "eslint": "^8.8.0",
+    "eslint": "^7.28.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-jsx-a11y": "^6.5.1",
     "eslint-plugin-react": "^7.28.0",

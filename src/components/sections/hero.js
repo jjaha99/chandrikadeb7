@@ -1,10 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
+import { Link } from 'gatsby';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import { email } from '@config';
 import styled from 'styled-components';
 import { theme, mixins, media, Section } from '@styles';
 const { colors, fontSizes, fonts, navDelay, loaderDelay } = theme;
+import Typed from 'react-typed';
 
 const StyledContainer = styled(Section)`
   ${mixins.flexCenter};
@@ -38,7 +40,7 @@ const StyledSubtitle = styled.h3`
   font-size: 80px;
   line-height: 1.1;
   color: ${colors.slate};
-  ${media.desktop`font-size: 70px;`};
+  ${media.desktop`font-size: 80px;`};
   ${media.tablet`font-size: 60px;`};
   ${media.phablet`font-size: 50px;`};
   ${media.phone`font-size: 40px;`};
@@ -73,7 +75,24 @@ const Hero = ({ data }) => {
     <StyledTitle style={{ transitionDelay: '200ms' }}>{frontmatter.name}.</StyledTitle>
   );
   const three = () => (
-    <StyledSubtitle style={{ transitionDelay: '300ms' }}>{frontmatter.subtitle}</StyledSubtitle>
+    <div>
+      <h3 className="big-heading">
+        Everyday, I{' '}
+        <Typed
+          loop
+          typeSpeed={100}
+          backSpeed={70}
+          strings={['sleep', 'eat', 'learn', 'code.']}
+          shuffle={false}
+          backDelay={400}
+          fadeOut={false}
+          fadeOutDelay={100}
+          //loopCount={20}
+          showCursor
+          cursorChar="|"
+        />
+      </h3>
+    </div>
   );
   const four = () => (
     <StyledDescription
